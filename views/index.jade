@@ -1,0 +1,22 @@
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='/css/bootstrap.min.css', rel='stylesheet', media='screen')
+  body
+  .container              
+    h1 BLOG: DEFINICIÓN DE PÁRRAFO
+    p.lead El párrafo es la exposición coherente y por escrito de una idea completa. Es unidad de pensamiento y sentimiento, forma la unidad de expresión en el lenguaje escrito. Dicha unidad está integrada por dos elementos: el enunciado principal y los enunciados secundarios, los cuales complementan al principal.
+
+    p.lead Dependiendo de su función, hay muchos tipos de párrafo: narrativo, descriptivo, argumentativo, analítico, sintético, expositivo, literal, etc. Los cuales comúnmente se combinan, según las ideas que se quieren exponer. Una obra educativa o didáctica, combinará principalmente párrafos analíticos, y sintéticos con algunos descriptivos; en cambio una novela utilizará principalmente párrafos descriptivos y narrativos.
+
+    if (!user)
+      a(href="/login") Iniciar sesión
+      br
+      a(href="/register") Registrar
+    if (user)
+      p Usted está conectado actualmente como #{user.username}
+      a(href="/logout") Cerrar sesión
+
+  script(src='http://code.jquery.com/jquery.js')
+  script(src='js/bootstrap.min.js')
